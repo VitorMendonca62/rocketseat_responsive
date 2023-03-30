@@ -1,0 +1,119 @@
+@media (max-width: 895px) {
+  html {
+    font-size: 60%;
+  }
+  .cards .card img {
+    transform: translateY(-36px);
+  }
+  .cards .card .infos {
+    transform: translateY(-76px);
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 615px) {
+  .introdution {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introdution img {
+    order: -1;
+    margin-bottom: 16px;
+  }
+  .introdution div {
+    text-align: center;
+  }
+  html {
+    font-size: 50% !important;
+  }
+}
+
+@media (max-width: 598px) {
+  .cards .card img {
+    transform: translateY(-48px);
+  }
+  .cards .card .infos {
+    transform: translateY(-98px);
+  }
+  footer .input-group {
+    display: block;
+    margin: 0;
+  }
+  footer .input-group input {
+    width: 100% !important;
+    margin-bottom: 8px;
+  }
+  header .menu-active .nav-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    background-color: #6149af;
+  }
+  .menu nav {
+    display: none;
+  }
+  .menu-active nav {
+    display: flex;
+  }
+  header .menu-active ul {
+    flex-direction: column;
+    gap: 100px;
+  }
+  header .menu-active .nav-header li a {
+    font-size: 4rem !important;
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    padding: 48px 24px !important;
+  }
+  .hamburger {
+    position: relative;
+    z-index: 4;
+  }
+  .hamburger span {
+    background-color: #fff;
+    display: block;
+    margin-top: 4px;
+    width: 24px;
+    height: 4px;
+    border-radius: 4px;
+    opacity: 1;
+    transition: 0.4s;
+    position: relative;
+  }
+  .menu-active .hamburger span {
+    right: 10px;
+  }
+  .menu-active .hamburger span:nth-child(1) {
+    transform: translate(11px, 0px);
+    rotate: 45deg;
+  }
+  .menu-active .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-active .hamburger span:nth-child(3) {
+    transform: translate(12px, 0px);
+    rotate: -45deg;
+  }
+}
+@media (max-width: 350px) {
+  .introdution img {
+    width: 225px;
+  }
+}
+@media (max-width: 260px) {
+  .introdution img {
+    width: 225px;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+  }
+}

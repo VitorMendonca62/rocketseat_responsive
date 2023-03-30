@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+}
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  max-width: 980px;
+}
+header {
+  background-color: #7159c1;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: 150px;
+  padding: 16px 0;
+  margin-left: 12px;
+}
+header .nav-header li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 24px;
+}
+header .nav-header li a:hover {
+  background-color: #ffffff28;
+}
+/* FIM HEADER */
+.introdution {
+  align-items: flex-start;
+  padding: 80px 0;
+}
+.introdution .title {
+  color: rgb(75, 75, 75);
+  font-size: 3.6rem;
+  line-height: 40px;
+  font-weight: 700;
+}
+.introdution p {
+  color: rgb(154, 142, 191);
+  font-size: 1.8rem;
+  padding: 16px 0;
+  line-height: 32px;
+}
+.introdution button {
+  background-color: #7159c1;
+  color: #fff;
+  border: none;
+  padding: 14px 48px;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.introdution button:hover {
+  background-color: #7159c1dc;
+}
+/* FIM INTRODUTION */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-bottom: 80px;
+}
+.cards .card {
+  width: 100%;
+  position: relative;
+  background-color: #7159c1;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.cards .card:hover {
+  transform: translateY(-8px);
+  transition: 0.4s;
+}
+.cards .card img {
+  width: inherit;
+  transform: translateY(-32px);
+}
+.cards .card .infos {
+  padding: 24px;
+  transform: translateY(-64px);
+  position: relative;
+  z-index: 2;
+  background-color: #7159c1;
+}
+.cards .card p {
+  color: #ecf0f1;
+  font-size: 1.6rem;
+  position: relative;
+  line-height: 24px;
+}
+.cards .card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 32px;
+}
+.cards .card span {
+  color: #ecf0f1;
+  font-size: 1.6rem;
+}
+.cards .card span:nth-child(2) {
+  background-color: #6149af;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+/* FIM CARD */
+footer {
+  background-color: #7159c1;
+  padding: 80px 0;
+}
+footer .container {
+  background-color: #fff;
+  padding: 40px;
+}
+footer h3 {
+  font-size: 2.8rem;
+  color: rgb(75, 75, 75);
+  font-weight: 700;
+  padding-bottom: 32px;
+}
+footer .input-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+footer .input-group input {
+  padding: 12px;
+  font-size: 1.6rem;
+  width: 100%;
+}
+footer .input-group:nth-child(4) input:nth-child(1) {
+  width: 45%;
+}
+footer .input-group:nth-child(4) input:nth-child(2),
+footer .input-group:nth-child(4) input:nth-child(3) {
+  width: 25%;
+}
+footer button {
+  background-color: #7159c1;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 16px;
+  font-size: 1.6rem;
+}
+.container-modal {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-color: #00000096;
+}
+.modal {
+  width: 100%;
+  max-width: 960px;
+  background-color: #fff;
+  padding: 32px 0;
+  position: relative;
+  z-index: 15;
+  animation: show-modal normal 0.8s;
+}
+
+.modal p {
+  position: absolute;
+  font-size: 2.5rem;
+  text-align: right;
+  top: 0;
+  right: 16px;
+  cursor: pointer;
+}
+.modal iframe {
+  width: 100%;
+  height: 450px;
+}
+@keyframes show-modal {
+  0% {
+    opacity: 0;
+    scale: 1.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
